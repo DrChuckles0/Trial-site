@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="logo.svg" alt="Company Logo">
+                </a>
+                <div class="divider" class="divider hide-mobile"></div>
+                <a href="#" class="home hide-mobile">Home</a>
+            </div>
+
+            <nav>
+                <a href="#" class="hamburger hide-desktop">
+                    <img src="hamburger.svg" alt="hamburger for mobile">
+                </a>
+                <ul class="sidebar">
+                    <li>
+                        <a href="#" class="hamburger-close">
+                            <img src="close.svg" alt="close hamburger">
+                        </a>
+                    </li>
+                    <li><a href="#">Our Categories</a></li>
+                    <li><a href="#">Our Originals</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <p class="subheader-hero">
+                Best Quality Deals
+            </p>
+            <h1 class="header-hero">Amazing Variety of Goods Starting at Just Rs 250</h1>
+            <a class="CTA" href="#">SHOP NOW</a>
+        </main>
+
+        <div class="heroimage">
+            <img src="hero_image.png" alt="Main image for Hero section">
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.sidebar');
+        const menuBtn = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.hamburger-close');
+
+        menuBtn.addEventListener('click', () =>{
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () =>{
+            menu.classList.remove('open')
+        })
+    </script>
+</body>
+</html>
